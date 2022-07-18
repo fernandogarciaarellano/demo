@@ -23,7 +23,7 @@ public class SpringSecurityConfig {
 	@Bean
 	public SecurityFilterChain configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-			.antMatchers("/ContractType**")
+			.antMatchers("/Contract**", "/Employee**")
 			.hasRole("USER")
 			.anyRequest()
 			.authenticated()
@@ -46,7 +46,7 @@ public class SpringSecurityConfig {
 		userDetailsList.add(
 				User.withUsername("metaphorce")
 					.password(passwordEncoder()
-					.encode("password"))
+					.encode("m3t4Ph0rc3"))
 					.roles("USER")
 					.build());
 
