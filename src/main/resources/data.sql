@@ -1,0 +1,3 @@
+INSERT INTO `metaphorce`.`CONTRACT_TYPE`(`contract_type_id`,`date_created`,`description`,`is_active`,`name`) VALUES (1, curtime(), 'Permanent', 1, 'Permanent');
+INSERT INTO `metaphorce`.`CONTRACT_TYPE`(`contract_type_id`,`date_created`,`description`,`is_active`,`name`) VALUES (2, curtime(), 'External', 1, 'External');
+INSERT INTO `metaphorce`.`CONTRACT_TYPE`(`contract_type_id`,`date_created`,`description`,`is_active`,`name`) VALUES (3, curtime(), 'Fixed-Term', 1, 'Fixed-Term');
